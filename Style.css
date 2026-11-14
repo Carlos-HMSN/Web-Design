@@ -1,0 +1,339 @@
+body {
+
+	background: #F2E9E5;
+	font-family: "Comfortaa", sans-serif;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+h1 {
+	color: #996864;
+	font-size: 50px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+#contato {
+	font-style: normal;
+	color: #996864;
+	background: #F2E9E5;
+	padding: 10px;
+	font-size: 25px;
+	line-height: 1.5;
+}
+
+
+.itens {
+	font-style: normal;
+	color: #996864;
+	background: #F2E9E5;
+	padding: 10px;
+	font-size: 25px;
+	line-height: 1.5;
+}
+
+
+#banner {
+	display: flex;
+	width: 40%;
+	margin: 0%;
+  	justify-content: center;
+  	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0%;
+}
+
+.lista {
+	display: inline-block;
+	text-align: center;
+    padding: 0;         /* Remove espaçamentos padrão de lista */
+    margin: 0;
+}
+
+
+header {
+	background: #F2E9E5;
+	padding: 5%;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.bannercontato{
+	padding-bottom: 0%;
+}
+
+nav a {
+	display: inline-block;
+	text-transform: normal;
+	color: #996864;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 10px;
+	transition: transform 0.2s ease, color 0.2s ease; /* Suaviza a transição */
+}
+
+nav a:hover {
+	color: #996864;
+	/*text-decoration: underline; alterações como "none" podem ser feitas para alterar a exibição do texto*/
+	transform: scale(1.1); /* Cresce visualmente sem empurrar a página, evita que o backgroud se mova bruscamente*/
+	transform: scale(1.12); /* Aumenta visualmente sem empurrar o menu ou o fundo */
+}
+
+
+/*Alteração no main e footer*/
+
+.produtos a {
+	text-decoration: none;
+	font-style: normal;
+	text-align: center;
+	color: #996864;
+	vertical-align: top;
+	box-sizing: border-box;
+	/*border: 10px solid #996864;*/
+	image-orientation: center;
+	/*Mantém a imagem normal em 100% e usa a propriedade filter: brightness() para dar um leve toque de iluminação e nitidez quando o cursor passa por cima.*/
+	transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(100%);
+}
+
+.produtos {
+    text-align: center;
+    padding: 0;         /* Remove espaçamentos padrão de lista */
+    margin: 0;
+}
+
+.produtos a {
+	/* ignora o tamanho da caixa do arquivo e cola a sombra diretamente nos pixels coloridos do desenho.*/
+	filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 1));
+}
+
+.produtos li {	
+	display: inline-block;
+	font-style: normal;
+	text-align: center;
+	font-size: 60%;
+	color: #996864;
+	vertical-align: top;
+	margin: 0;
+	width: 350px;
+	box-sizing: border-box;
+	/*border: 10px solid #996864;*/
+	image-orientation: center;
+}
+
+.produtos p {
+	font-size: 15px;
+	word-break: break-all;
+}
+
+
+#icones {
+	width: 55%;
+	padding: 0;
+	margin: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 12%;
+}
+
+
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2{
+	font-size:  25px;
+}
+
+.produtos h2 {
+	font-size: 200%;
+	font-weight: bold;
+	padding-bottom: 3%;
+	margin: 0;
+}
+
+.produtos li:hover p {
+	font-size: 17px;
+}
+
+.produtos a:hover {
+	opacity: 1;
+	box-shadow: 6px 6px 10px 0.5px #000000;
+}
+
+/* Garante que a imagem cresça de forma suave */
+.produtos a img {
+	transition: transform 0.3s ease;
+}
+
+/* Aumenta a imagem em 10% ao passar o mouse no link */
+.produtos a:hover img {
+	transform: scale(1.07);
+	transform: scale(1.05);
+    filter: brightness(106%) contrast(103%); /* Dá um leve "glow" na foto */
+}
+
+/*.produto-descricao {
+	font-size: 20px;
+	word-break: break-word;
+}
+
+.produto-descricao:hover {
+	font-size: 30px;
+	word-break: break-word;
+}*/
+
+
+#produto-preco {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin: 0;
+	padding-bottom: 5%;
+}
+
+footer {
+	padding-top: 10%;
+	text-align: center;
+	background: url("bg.jpg");
+}
+
+.rodape p{
+	text-align: center;
+	border-color: #C78C19;
+	font-style: normal;
+	color: #996864;
+	background: #F2E9E5;
+	padding-top: 3%;
+	padding-bottom: 2%;
+	font-size: 20px;
+	line-height: 1.5;
+	text-transform: none;
+}
+
+.rodape a{
+	border-color: #C78C19;
+	font-style: normal;
+	color: #996864;
+	background: #F2E9E5;
+	padding-top: 1%;
+	font-size: 20px;
+	line-height: 0;
+	text-transform: none;
+}
+
+/* FORMULÁRIO DA PÁGINA*/
+
+/* definições para a página de Contato */
+
+
+form {
+	margin: 40px 0;
+	text-align: left;
+}
+
+form label, form legend {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: flex;
+	margin: 0 0 20px;
+	padding: 10px 20px;
+	width: 97.5%
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	display: flex;
+	margin-left: 31%;
+	width: 40%;
+	padding: 15px 0;
+	background: #996864;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+
+}
+
+.enviar:hover {
+	background: #4A2E2C;
+}
+
+table {
+margin: 20px 0 40px;
+align-items: left;
+
+}
+
+thead {
+background: #555555;
+color: white;
+font-weight: bold;
+align-items: left;
+
+}
+
+td, th {
+border: 1px solid #000000;
+padding: 8px 10px;
+
+}
+
+
+
+.Voltar {
+    text-align: center; /* Centraliza elementos inline/inline-block dentro da div */
+    margin-top: 20px;   /* Opcional: cria um espaço acima do botão */
+}
+
+.Voltar li {
+    display: inline-block;
+    list-style: none; /* Remove a bolinha da lista */
+}
+
+.Voltar a {
+    display: inline-block; /* Mudado de inline-flex para inline-block */
+    color: #996864;        /* Cor do texto */
+    font-weight: bold;	
+    font-size: 20px;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.Voltar a:hover {
+	font-size: 25px;
+}
+
+/*Edição no iframe vídeo e localização*/
+
+.video {
+	text-align: center;
+	background: linear-gradient(#F2E9E5,#996864,#F2E9E5);
+}
+
+.mapa {
+	text-align: center;
+	padding: 3em 30px;
+	background: linear-gradient(#F2E9E5,#996864,#F2E9E5);
+}

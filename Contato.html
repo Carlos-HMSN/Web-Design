@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="uft-8">
+		<title> Lunomercado </title>
+		<link rel="stylesheet" href="Style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lobster&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		
+		<header>
+			
+			<div>
+				<nav>
+					<ul class="lista">
+						<a href="index.html" id="imgbanner"><img id="banner" src="logolunomercado.png"></a>
+					</ul> 
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+
+					<label for="radio-email"><input type="radio" value="email" id="radio-email" name="botao"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="botao"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="botao" checked> Whatsapp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+				<table>
+				<thead>
+					<tr>
+						<td>Dias</td>
+						<td>Horários</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h - 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h - 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h - 20h</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<section class="mapa">
+				<p class="titulo-pricipal">Nosso estabelecimento</p>
+				<p>Nosso estabelecimento está localizado no Núcleo Residencial Tutunas</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.383345935465!2d-47.962731824019514!3d-19.73886113238646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad1a0b57857ed%3A0xd98c95f0fa3c4f7f!2sR.%20Dr.%20Adolfo%20Bezerra%20de%20Menezes%2C%2068%20-%20Tutunas%2C%20Uberaba%20-%20MG%2C%2038057-170!5e0!3m2!1spt-BR!2sbr!4v1793550981382!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+			</section>
+
+				<input type="submit" value="Enviar formulario" class="enviar">
+			</form>
+
+			<div class="Voltar">
+				<ul>
+
+					<li><a href="index.html">Voltar ao início</a></li>
+				</ul>
+			</div>
+
+			
+		</main>
+
+		<footer>
+			<p class="copyright">&copy;Copyright Lunomercado - 2026</p>
+		</footer>
+
+	</body> 
+</html>
